@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-size: 1.6rem;
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: #41295a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #41295a,
+    #2f0743
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #41295a,
+    #2f0743
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  color: #fff;
+  animation: dropDown;
+  animation-duration: 2s;
+  text-align: center;
+}
+
+.btn {
+  border: none;
+  background-color: #9966cc;
+  /* padding: 0.6rem 1.5rem; */
+  padding: 0.5rem;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.main__container {
+  margin-top: 2rem;
+}
+.lorem__form {
+  margin-top: 2rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+label {
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+.lorem__container {
+  width: 75%;
+  margin: 0 auto;
+  border: 3px solid #9966cc;
+  border-radius: 11px;
+  padding: 1rem;
+  color: #fff;
+  animation: dropDown;
+  animation-duration: 1s;
+}
+
+.hidden {
+  display: none;
+  animation: dropDown;
+  animation-duration: 2s;
+}
+
+.buttons__container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 0.7rem;
+  position: relative;
+}
+.reset {
+  padding: 0.5rem 1.5rem;
+  animation: dropDown;
+  animation-duration: 2s;
+}
+
+.copy {
+  padding: 0rem 1.5rem;
+  animation: dropDown;
+  animation-duration: 2s;
+}
+
+.mess {
+  position: absolute;
+  top: -40px;
+  right: 23rem;
+  color: #fff;
+  animation: dropDown;
+  animation-duration: 2s;
+}
+@keyframes dropDown {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

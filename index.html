@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>LoremIpsum generator :)</title>
+  </head>
+  <body>
+    <div class="main__container">
+      <h1 class="header animate__backInDown">
+        Welcome I'm here to help you with Lorem Ipsum!
+      </h1>
+      <div class="form__container">
+        <form class="lorem__form">
+          <label for="amount">Paragraphs:</label>
+          <input type="number" name="amount" id="amount" placeholder="5" />
+          <button type="submit" class="btn">Generate!</button>
+        </form>
+      </div>
+      <div class="buttons__container">
+        <button class="btn reset hidden">Reset</button>
+        <button class="btn copy hidden">Copy</button>
+        <p class="mess hidden">Copied!</p>
+      </div>
+      <div class="lorem__container hidden"></div>
+    </div>
+  </body>
+</html>
